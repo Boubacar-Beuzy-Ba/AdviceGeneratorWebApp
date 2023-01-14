@@ -1,5 +1,27 @@
 .App {
-  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+}
+
+button:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+  transition: all 0.2s ease-out;
+}
+
+.lines::after, .lines::before {
+  content: '';
+  position:absolute;
+  margin: auto;
+  height: 2px;
+  background-color: rgb(112, 109, 109);
+  width: 45%;
+  top: 45%;
+}
+
+.lines::after {
+  left: 0;
+}
+.lines::before {
+  right: 0;
 }
 
 .App-logo {
